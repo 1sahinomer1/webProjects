@@ -2,9 +2,9 @@ var countryArray = [];
 
 function onInput() {
   let input = document.getElementById("myInput").value;
-  let newArray = countryArray.filter((country) =>
-    country.name.toLowerCase().includes(input.toLowerCase())
-  );
+    let newArray = countryArray.filter((country) =>
+      country.name.toLowerCase().includes(input.toLowerCase())
+    );
   createTable(newArray);
 }
 
@@ -14,7 +14,7 @@ function createTable(array) {
     output += `
         <tr>
             <th scope ="row">${i}</th>
-            <td><img src="${array[i].flag}" width=65 height=65</i></td>
+            <td><img src="${array[i].flag}" width=85 height=65</i></td>
             <td>${array[i].name}</td>
             <td>${array[i].capital}</td>
             <td>${array[i].demonym}</td>
